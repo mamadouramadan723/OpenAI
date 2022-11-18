@@ -15,11 +15,45 @@
         android:id="@+id/navigation_dashboard"
         android:name="com.rmd.android.openai.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_menu_atc"
+            app:destination="@id/navigation_menu_atc" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_menu_dalle_ig"
+            app:destination="@id/navigation_menu_dalle_ig" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.rmd.android.openai.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_menu_atc"
+        android:name="com.rmd.android.openai.ui.dashboard.menus.AdvancedTweetClassifier"
+        android:label="@string/atc"
+        tools:layout="@layout/fragment_menu_advancedtweetclassifier" >
+        <action
+            android:id="@+id/action_navigation_menu_atc_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_menu_dalle_ig"
+        android:name="com.rmd.android.openai.ui.dashboard.menus.DalleImageGeneration"
+        android:label="@string/dalleig"
+        tools:layout="@layout/fragment_menu_dalle_imagegeneration" >
+        <action
+            android:id="@+id/action_navigation_menu_dalle_ig_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+
+    <navigation android:id="@+id/navigation2"
+        app:startDestination="@id/navigation">
+        <navigation
+            android:id="@+id/navigation"
+            app:startDestination="@id/navigation_notifications">
+            <fragment
+                android:id="@+id/navigation_notifications"
+                android:name="com.rmd.android.openai.ui.notifications.NotificationsFragment"
+                android:label="@string/title_notifications"
+                tools:layout="@layout/fragment_notifications" />
+        </navigation>
+    </navigation>
 </navigation>

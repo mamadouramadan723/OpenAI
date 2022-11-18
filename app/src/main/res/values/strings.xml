@@ -3,4 +3,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="enter">Enter</string>
+    <string name="result">Result :</string>
+    <string name="tap_your_tweet_here">Tap Your Tweet Here</string>
+    <string name="atc">Advanced Tweet Classifier</string>
+    <string name="tap_your_description_here">Tap Your Description Here</string>
+    <string name="dalleig">DALL.E Image Generation</string>
 </resources>

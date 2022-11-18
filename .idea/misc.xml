@@ -6,6 +6,9 @@
         <entry key="..\:/Users/mamad/AndroidStudioProjects/OpenAI/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/mamad/AndroidStudioProjects/OpenAI/app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/mamad/AndroidStudioProjects/OpenAI/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/mamad/AndroidStudioProjects/OpenAI/app/src/main/res/layout/fragment_menu_advancedtweetclassifier.xml" value="0.1" />
+        <entry key="..\:/Users/mamad/AndroidStudioProjects/OpenAI/app/src/main/res/layout/fragment_menu_dalle_imagegeneration.xml" value="0.1" />
+        <entry key="..\:/Users/mamad/AndroidStudioProjects/OpenAI/app/src/main/res/layout/menugrv_item.xml" value="0.2" />
       </map>
     </option>
   </component>
